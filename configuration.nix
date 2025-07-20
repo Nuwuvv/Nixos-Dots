@@ -12,6 +12,8 @@
 
    # This deletes your 10 days or older generations every week. Change this to your liking or delte the paragraph if you don't want this.
 
+   hardware.enableRedistributableFirmware = lib.mkDefault true; #Delete this line. You don't need it.
+
    nix.gc = { 
      automatic = true;
      dates = "weekly";
