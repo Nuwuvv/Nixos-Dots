@@ -28,6 +28,11 @@
   #};
   #services.blueman.enable = true;
 
+  # NH environment variable. Using NH or nixhelper will save a lot of typing, if you don't use it feel free to delete this block.
+  environment.sessionVariables = {
+    NH_FALKE = "/home/Nuuvv/.config/Nixos";
+  };
+
   # Home-manager
 
   home-manager = {

@@ -14,6 +14,9 @@
    ./nvim.nix
    ./rofi.nix
    ./dunst.nix
+   ./fastfetch.nix
+   ./hypridle.nix
+   ./hyprlock.nix
  ];
 
  # Don't touch

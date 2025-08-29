@@ -7,15 +7,23 @@ let
     
     dunst &
 
+    hypridle &
+
+    hyprctl dispatch workspace 1 &
+
     waybar 
+
   '';
 in
 {
  wayland.windowManager.hyprland = { 
    enable = true;
    settings = {
+     ecosystem = {
+       "no_update_news" = "true";
+     };
      monitor = [
-       "DP-5, 3440x1440@99.98,3935x2180, 1"
+       "DP-5, preferred,0x0, 1"
      ];
      "$terminal" = "kitty -1"; # Your terminal
      "$fileManager" = "dolphin"; # Your FileManager
